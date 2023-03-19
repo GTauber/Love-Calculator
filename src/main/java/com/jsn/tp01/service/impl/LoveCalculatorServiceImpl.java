@@ -2,7 +2,7 @@ package com.jsn.tp01.service.impl;
 
 import com.jsn.tp01.model.entity.LoveCalculator;
 import com.jsn.tp01.service.LoveCalculatorService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @Slf4j
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class LoveCalculatorServiceImpl implements LoveCalculatorService {
 
     private final WebClient webClient;
